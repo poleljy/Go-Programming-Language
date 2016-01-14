@@ -6,6 +6,9 @@ The Go Programming Language Learning
 * [Go语言编程](/Book/Go语言编程)
 * [GoWeb编程](/Book/GoWeb编程)
 
+### Blog笔记
+* [并发与并行](/Blog/并发与并行.md)
+
 ### TODO List
 * reflect
 

@@ -11,6 +11,7 @@ The Go Programming Language Learning
 
 ### TODO List
 * reflect
+* 闭包
 
 
 

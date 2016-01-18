@@ -8,6 +8,9 @@ The Go Programming Language Learning
 
 ### Blog笔记
 * [并发与并行](/Blog/并发与并行.md)
+ 
+### 开源库的学习
+* [go-kit](/Lib/go-kit)
 
 ### TODO List
 * reflect

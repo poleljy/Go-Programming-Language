@@ -15,6 +15,15 @@ The Go Programming Language Learning
 ### TODO List
 * reflect
 * 闭包
+* strings库
+* time库
+* os
+* net.http
+* net/url
+* bytes
+* io/ioutil
+* flag
+* painc/defer/recover
 
 
 

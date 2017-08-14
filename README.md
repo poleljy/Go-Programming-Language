@@ -18,6 +18,7 @@ The Go Programming Language Learning
 * strings库
 * time库
 * os
+* log
 * net.http
 * net/url
 * bytes

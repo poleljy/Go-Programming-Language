@@ -36,6 +36,7 @@ The Go Programming Language Learning
 * flag
 * painc/defer/recover
 * rune
-
+* https://studygolang.com/articles/373
+* http://docs.studygolang.com/doc/faq#stack_or_heap
 
 

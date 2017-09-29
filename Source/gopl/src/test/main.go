@@ -16,5 +16,9 @@ func main() {
 
 	//TestUTF8()
 
-	TestPrime()
+	//TestPrime()
+	
+	//TestAlloc()
+	
+	TestFunction()
 }

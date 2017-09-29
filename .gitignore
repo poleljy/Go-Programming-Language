@@ -1,0 +1,11 @@
+# Go.gitignore
+
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+*~
+
+# Directory
+Source/gopl/bin
+Source/gopl/pkg

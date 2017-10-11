@@ -17,8 +17,10 @@ func main() {
 	//TestUTF8()
 
 	//TestPrime()
-	
+
 	//TestAlloc()
-	
-	TestFunction()
+
+	//TestFunction()
+
+	TestSlice()
 }

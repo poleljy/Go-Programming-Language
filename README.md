@@ -8,8 +8,12 @@ The Go Programming Language Learning
 * [GOPL](Bool/GoPL)
 
 ### 标准包
-* [strings](/STL/strings.md)
 * [bytes](STL/bytes.md)
+* [fmt](STL/fmt.md)
+* [io](STL/io.md)
+* [ioutil](STL/ioutil.md)
+* [os](STL/os.md)
+* [strings](/STL/strings.md)
 * [strconv](STL/strconv.md)
 * [unicode](STL/unicode.md)
 

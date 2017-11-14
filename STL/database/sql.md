@@ -3,7 +3,7 @@
 ```
 import (
     "database/sql"
-    _ "github.com/jackx/pgx/stdlib"
+    _ "github.com/jackc/pgx/stdlib"
 )
 ```
 

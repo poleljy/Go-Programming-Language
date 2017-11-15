@@ -21,7 +21,14 @@ func main() {
 
 #### 获取结果
 Go将数据库操作分为两类：`Query`与`Exec`。两者的区别在于前者会返回结果，而后者不会。
+通常`DDL`和增删改使用`Exec`，返回结果集的查询使用`Query`
+```go
+func (s Stmt) Query(args ...interface{}) (Rows, error)
+func (s *Stmt) Exec(args ...interface{}) (Result, error) 
 
+func (db *DB) Query(query string, args ...interface{}) (*Rows, error) 
+func (db *DB) Exec(query string, args ...interface{}) (Result, error)
+```
 
 #### 参考资料
 [Go database/sql 教程 ](https://yq.aliyun.com/articles/178898?utm_content=m_29337)

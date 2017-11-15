@@ -65,19 +65,19 @@ func (db CentralDB) Query() {
 	if rows.Err() != nil {
 		fmt.Println(err)
 	}
-
 	fmt.Println(sum)
 }
 
 func (db CentralDB) QueryRow() {
 	var sum int
 	err := db.Conn.QueryRow(`SELECT sum(n) FROM (SELECT generate_series(1,$1) as n) a;`, 10).Scan(&sum)
+	//err := db.Conn.QueryRow(`select age from test where name = $1`, "Lee").Scan(&sum)
 	if err != nil {
-		fmt.Println(err)
 		if err == sql.ErrNoRows {
-			fmt.Println(err)
+			fmt.Println("NO data return:", err)
 			return
 		}
+		fmt.Println(err)
 	}
 	fmt.Println(sum)
 }
@@ -89,6 +89,13 @@ func main() {
 	}
 
 	defer db.Disconnect()
+
+	if db.IsAvailable() {
+		fmt.Println("Connection is available")
+	} else {
+		fmt.Println("Connection is unavailable")
+	}
+
 	db.Query()
 
 	db.QueryRow()

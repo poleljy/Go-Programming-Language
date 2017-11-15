@@ -5,7 +5,7 @@ The Go Programming Language Learning
 ### 读书笔记
 * [Go语言编程](/Book/Go语言编程)
 * [GoWeb编程](/Book/GoWeb编程)
-* [GOPL](Bool/GoPL)
+* [GOPL](Book/GoPL)
 
 ### 标准包
 * [bytes](STL/bytes.md)

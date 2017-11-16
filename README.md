@@ -43,5 +43,6 @@ The Go Programming Language Learning
 * https://studygolang.com/articles/373
 * http://docs.studygolang.com/doc/faq#stack_or_heap
 * https://yq.aliyun.com/articles/178898?utm_content=m_29337
+* https://segmentfault.com/a/1190000011361164
 
 

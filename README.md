@@ -5,7 +5,7 @@ The Go Programming Language Learning
 ### 读书笔记
 * [Go语言编程](/Book/Go语言编程)
 * [GoWeb编程](/Book/GoWeb编程)
-* [GOPL](Bool/GoPL)
+* [GOPL](Book/GoPL)
 
 ### 标准包
 * [bytes](STL/bytes.md)
@@ -43,5 +43,6 @@ The Go Programming Language Learning
 * https://studygolang.com/articles/373
 * http://docs.studygolang.com/doc/faq#stack_or_heap
 * https://yq.aliyun.com/articles/178898?utm_content=m_29337
+* https://segmentfault.com/a/1190000011361164
 
 

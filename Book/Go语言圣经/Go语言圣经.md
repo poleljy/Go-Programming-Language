@@ -73,3 +73,88 @@ months := [...]string{1: "January", /* ... */, 12: "December"}
 化为空字符串。
 ```
 如果切片操作超出cap(s)的上限将导致一个panic异常，但是超出len(s)则是意味着扩展了slice，因为新slice的长度会变大
+
+### 4.3. Map
+基础操作
+``` go
+ages := make(map[string]int) // mapping from strings to ints
+
+ages := map[string]int{
+	"Jack":25,
+	"Rose":22,
+}
+
+ages["alice"] = 32
+fmt.Println(ages["alice"]) // "32"
+
+delete(ages, "alice") // remove element ages["alice"]
+
+for name, age := range ages {
+    fmt.Printf("%s\t%d\n", name, age)
+}
+
+if age, ok := ages["bob"]; !ok { /* ... */ }
+```
+
+排序
+``` go
+import (
+	"sort"
+	"fmt"
+)
+
+func main() {
+	ages := make(map[string]int)
+
+	//var names []string
+	names := make([]string, 0, len(ages)) //给slice分配一个合适的大小将会更有效
+
+	for name := range ages {
+		names = append(names, name)
+	}
+	sort.Strings(names)
+
+	for name, age := range names {
+		fmt.Printf("%s\t%d\n", name, ages[name])
+	}
+}
+```
+
+处理key值是slice
+``` go
+var m = make(map[string]int)
+
+func k(list []string) string { return fmt.Sprintf("%q", list) }
+
+func Add(list []string)       { m[k(list)]++ }
+func Count(list []string) int { return m[k(list)] }
+```
+
+
+#### 第七章 接口
+
+#### 第十一章 测试
+``` go
+import (
+	"testing"
+)
+```
+
+在`*_test.go`文件中，有三种类型的函数：`测试函数`、`基准测试函数`、`示例函数`
+
+`测试函数`是以`Test`为函数名前缀的函数，用于测试程序的一些逻辑行为是否正确；go test命令会调用这些测试函数并报告测试结果是PASS或FAIL。
+
+``` go
+import "testing"
+
+func TestXXX(t testing.T) { }
+```
+
+`基准测试函数`是以`Benchmark`为函数名前缀的函数，它们用于衡量一些函数的性能；go test命令会多次运行基准函数以计算一个平均的执行时间。
+``` go
+import "testing"
+
+func BenchmarkXXX(b *testing.B) { }
+```
+
+`示例函数`是以`Example`为函数名前缀的函数，提供一个由编译器保证正确性的示例文档,示例函数没有函数参数和返回值。

@@ -22,5 +22,5 @@ func main() {
 
 	//TestFunction()
 
-	TestSlice()
+	//TestSlice()
 }

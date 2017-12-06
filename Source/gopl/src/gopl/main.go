@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "fmt"
+	"fmt"
 	_ "os"
 
 	_ "gopl/ch1"
@@ -11,12 +11,33 @@ import (
 	_ "unicode/utf8"
 )
 
+func print(name []byte) {
+	fmt.Println(string(name))
+}
+
+func f() (result int) {
+	defer func() {
+		result++
+	}()
+	return 0
+}
+
 func main() {
+	//	name := []byte("ok")
+	//	defer print(name)
+	//
+	//	name = []byte("no")
+	//	print(name)
+
 	// ch1
 	//ch1.TestDefer()
 
 	// ch7
-	ch7.TestHTTP2()
+	//ch7.TestHTTP2()
+
+	//ch7.TestSleep()
+
+	ch7.TestInterface()
 
 	// ch10
 	/*
@@ -25,4 +46,6 @@ func main() {
 			os.Exit(1)
 		}
 	*/
+
+	//fmt.Println(f())
 }

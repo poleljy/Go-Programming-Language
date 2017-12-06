@@ -3,6 +3,8 @@ package main
 import ()
 
 func main() {
+	TestSlice()
+
 	//DeferTest()
 
 	//Tutorial_pq()
@@ -23,4 +25,9 @@ func main() {
 	//TestFunction()
 
 	//TestSlice()
+
+	//TestTimer()
+	//TestExecutor()
+
+	//TestSyncOnce()
 }

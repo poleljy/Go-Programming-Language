@@ -26,6 +26,9 @@ The Go Programming Language Learning
 ### 源码
 [源码](/Source)
 
+### IDE
+[Goland](https://www.wrbug.com/2016/11/11/IntelliJ%20Idea%20%E6%8E%88%E6%9D%83%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BD%BF%E7%94%A8/)
+
 ### TODO List
 * reflect
 * 闭包
